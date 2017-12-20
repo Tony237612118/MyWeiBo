@@ -15,7 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        // 全局设置
+        setupGlobal();
+        
+        // 窗口
+        window = UIWindow.init(frame: UIScreen.main.bounds)
+        window?.rootViewController = MainViewController()
+        window?.makeKeyAndVisible()
+        
+        
         return true
     }
 
@@ -43,4 +52,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
+extension AppDelegate {
+    // 设置UITabBar全局颜色
+    func setupGlobal() {
+        
+        UITabBar.appearance().tintColor = UIColor.orange
+    }
 
+}
+// MARK: 自定义log输出
+func mySelfLog<T>(message : T, file : String = #file, funcName : String = #function, line : Int = #line) {
+    #if DEBUG
+        
+        let fileName = (file as NSString).lastPathComponent
+        print("[\(fileName)][\(funcName)][\(line)][message = \(message)]")
+        
+    #endif
+}

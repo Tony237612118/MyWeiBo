@@ -11,6 +11,11 @@
 		EA39CF071FD69C4500F7FC72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA39CF061FD69C4500F7FC72 /* Assets.xcassets */; };
 		EA39CF0A1FD69C4500F7FC72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA39CF081FD69C4500F7FC72 /* LaunchScreen.storyboard */; };
 		EA5471311FEA39C00040083F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA54712B1FEA39C00040083F /* AppDelegate.swift */; };
+		EA5471381FEA3DC60040083F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5471371FEA3DC60040083F /* MainViewController.swift */; };
+		EA54713A1FEA3F100040083F /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5471391FEA3F100040083F /* DiscoverViewController.swift */; };
+		EA54713C1FEA3F210040083F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA54713B1FEA3F210040083F /* HomeViewController.swift */; };
+		EA54713E1FEA3F2F0040083F /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA54713D1FEA3F2F0040083F /* MessageViewController.swift */; };
+		EA5471401FEA3F3E0040083F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA54713F1FEA3F3E0040083F /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		EA39CF091FD69C4500F7FC72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA39CF0B1FD69C4500F7FC72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA54712B1FEA39C00040083F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA5471371FEA3DC60040083F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EA5471391FEA3F100040083F /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		EA54713B1FEA3F210040083F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EA54713D1FEA3F2F0040083F /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		EA54713F1FEA3F3E0040083F /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,46 +75,51 @@
 			isa = PBXGroup;
 			children = (
 				EA54712B1FEA39C00040083F /* AppDelegate.swift */,
-				EA54712C1FEA39C00040083F /* Discover */,
-				EA54712D1FEA39C00040083F /* Home */,
-				EA54712E1FEA39C00040083F /* Main */,
-				EA54712F1FEA39C00040083F /* Message */,
-				EA5471301FEA39C00040083F /* Profile */,
+				EA5471341FEA3B080040083F /* Main */,
+				EA5471321FEA3B080040083F /* Discover */,
+				EA5471331FEA3B080040083F /* Home */,
+				EA5471351FEA3B080040083F /* Message */,
+				EA5471361FEA3B080040083F /* Profile */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		EA54712C1FEA39C00040083F /* Discover */ = {
+		EA5471321FEA3B080040083F /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				EA5471391FEA3F100040083F /* DiscoverViewController.swift */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
 		};
-		EA54712D1FEA39C00040083F /* Home */ = {
+		EA5471331FEA3B080040083F /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				EA54713B1FEA3F210040083F /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
 		};
-		EA54712E1FEA39C00040083F /* Main */ = {
+		EA5471341FEA3B080040083F /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				EA5471371FEA3DC60040083F /* MainViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		EA54712F1FEA39C00040083F /* Message */ = {
+		EA5471351FEA3B080040083F /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				EA54713D1FEA3F2F0040083F /* MessageViewController.swift */,
 			);
 			path = Message;
 			sourceTree = "<group>";
 		};
-		EA5471301FEA39C00040083F /* Profile */ = {
+		EA5471361FEA3B080040083F /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				EA54713F1FEA3F3E0040083F /* ProfileViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -182,7 +197,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA5471401FEA3F3E0040083F /* ProfileViewController.swift in Sources */,
+				EA54713A1FEA3F100040083F /* DiscoverViewController.swift in Sources */,
 				EA5471311FEA39C00040083F /* AppDelegate.swift in Sources */,
+				EA5471381FEA3DC60040083F /* MainViewController.swift in Sources */,
+				EA54713C1FEA3F210040083F /* HomeViewController.swift in Sources */,
+				EA54713E1FEA3F2F0040083F /* MessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +329,7 @@
 				INFOPLIST_FILE = WeiBo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pingan.WeiBo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
