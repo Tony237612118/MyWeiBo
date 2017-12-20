@@ -17,11 +17,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
         // 全局设置
-        setupGlobal();
+        setupGlobal()
+        
         
         // 窗口
         window = UIWindow.init(frame: UIScreen.main.bounds)
-        window?.rootViewController = MainViewController()
+        let vc = MainViewController();
+        window?.rootViewController = vc
+        
+        
+//        vc.addChildViewController(HomeViewController(), title: "首页", imageName: "tabbar_home")
+//        vc.addChildViewController(HomeViewController(), title: "消息", imageName: "tabbar_message_center")
+//        vc.addChildViewController(HomeViewController(), title: "发现", imageName: "tabbar_discover")
+//        vc.addChildViewController(HomeViewController(), title: "我", imageName: "tabbar_profile")
+        
+        
+        
         window?.makeKeyAndVisible()
         
         
